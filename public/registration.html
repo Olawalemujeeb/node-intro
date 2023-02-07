@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset = "UTF-8">
+	<title> Registration Page </title>
+	<style>
+	div{
+		top:50%;
+		left:50%;
+		background-color: white;
+		box-shadow: 2px 5px 6px black;
+		transform: translate(-50%,-50%);
+		position: absolute;
+		width:400px;
+		text-align: center;
+		border-radius: 8px;
+}
+body{
+	background: cyan;
+}
+a{
+	text-decoration: none;
+}
+input{
+	padding:8px;
+	width:80%;
+}
+::placeholder{
+	font-weight: 700;
+}
+button{
+	outline:none;
+	border:none;
+	text-align:center;
+	color:black;
+	font-size: 20px;
+	width:120px;
+	font-weight: 700;
+	padding:8px;
+	margin:4px;
+	background: cyan;
+	box-shadow: 2px 3px 4px black;
+}
+</style>
+</head>
+<body>
+	<div>
+        <header>
+		<h1>Register</h1>
+	</header>
+	<form action="/register" method="POST">
+			<label>Username</label>
+			<input type ="text" id = 'username' name="username" placeholder="akmuola" required>
+			<br><br>
+			<label>Email ID</label>
+			<input type ="email" id = 'email' name="email" placeholder="akinroyemo@gmail.com" required>
+			<br><br>
+			<label>Password</label>
+			<input type="password" id = "password" name="password" required placeholder="******">
+			<br><br>
+			<button type ="reset">Reset</button>
+			<button type ="submit">Submit</button>
+	</form>
+	<br><br>
+       <p> Already have an account <a href="./login.html">Login</a></p>
+				<div>
+</body>
+</html>
